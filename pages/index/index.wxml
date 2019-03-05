@@ -1,0 +1,79 @@
+<import src="../../templates/detail.wxml" />
+<import src="../../templates/detail.js" />
+<import src="../../topic/topic.js" />
+<!-- loading -->
+<view>
+    <loading hidden="{{hidden}}">
+        加载中...
+    </loading>
+</view>
+<!-- 轮播 -->
+  <view class="index-header" style="display:{{displaySwiper}}">
+    <swiper class="index-swiper"  indicator-dots="true" interval="10000" autoplay="true" indicator-color="rgba(255, 255, 255, .2)" indicator-active-color="rgba(255, 255, 255, .7)">
+        <block wx:key="id" wx:for="{{postsShowSwiperList}}">
+            <swiper-item id="{{item.id}}" index="{{index}}" data-redicttype="{{item.type}}" data-appid="{{item.appid}}" data-url="{{item.url}}" bindtap="redictAppDetail">
+                <image mode="aspectFill" src="{{item.content_first_image}}" style="width:100%;height:100%;" />
+            </swiper-item>
+        </block>
+    </swiper>
+</view>
+   <!--搜索-->
+  <view class='mysearch'>
+      <form catchsubmit="formSubmit" catchreset="formReset" id="search-form">
+          <view class="search-pancel">
+              <input color="#d3d3d3" value="" id="search-input" name="input" confirm-type="search" class="search-input" placeholder="搜索目的地/古镇/美食" bindconfirm="formSubmit"></input>
+              <button class="search-button" form-type="submit" size="mini" plain="true">
+                  <icon type="search" color="#ccc" size="16" />
+              </button>
+          </view>
+      </form>
+  </view>
+  <!-- 图标导航 -->
+            <view class="top-Nav wx:key={{ item.name }}">
+             <text>{{ item.name }}</text>
+            </view>
+  <!--文章显示-->
+  <view class="food-recommend">
+    <view class="food-list-wrap">
+      <view class="food-list">
+        <view bindtap="redictDetail" class="food-item" data-wepy-params-a="{{item.food}}" wx:for="{{postsList}}" id="{{item.id}}" wx:for-index="i" wx:key="i">
+        <!-- 文章标题 -->
+        <view class='box-cxcat'>
+        <!-- <view class="food-title">{{item.title.rendered}}</view> -->
+        <text class="">{{detail.category_name}}</text>
+        </view>
+         <view class='Segmenline'>
+          <view>{{detail.pageviews}}</view>
+         </view>
+        <!-- 文章内容 -->
+          <view class="food-detail">
+          <block wx:if="{{item.category_name !=null}}">
+                    <view> class="lable-t">{{item.category_name}}</view>
+            </block>
+            <image class="food-icon" src="{{item.content_first_image}}" mode="aspectFill"></image>
+            <view class="food-bg"></view>
+          </view>
+          
+        <!-- 文章摘要 -->
+         <view class="list-content">{{item.title.rendered}}</view>
+        <!-- 文章时间/浏览/点赞-->
+          <view class="food-desc">
+              <view class="entry-date">
+              
+                <image src="../../images/calendar.png" style="height:24rpx;width:24rpx;"></image>
+                <text class="entry-date-text">{{item.date}}</text>
+                  <image src="../../images/comments.png" style="height:24rpx;width:24rpx;margin-left: 20rpx;"></image>
+                  <text class="entry-icon-text">{{item.total_comments}}</text>
+                  <image src="../../images/pageviews.png" style="height:24rpx;width:24rpx;margin-left: 20rpx;"></image>
+                  <text class="entry-icon-text">{{item.pageviews}}</text>
+                  <image src="../../images/home-like.png" style="height:24rpx;width:24rpx;margin-left: 20rpx;"></image>
+                  <text class="entry-icon-text">{{item.like_count}}</text>
+            </view>
+            </view>
+            <!--  -->
+        </view>
+        <view class="no-more" style="display:{{isLastPage?'block':'none'}}">- 已到了世界的尽头 -</view>
+      </view>
+    </view>
+  </view>
+  

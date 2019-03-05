@@ -1,0 +1,68 @@
+.container {
+  height: 100%;
+}
+.topic-container{
+  background-color: #fff;
+}
+.topic-common-list {
+   padding: 24rpx; 
+   margin: 0 auto;
+}
+.list-item {
+  position: relative;
+  float: left;
+  overflow: hidden;
+  width: 100%;
+  border-radius: 12rpx;  
+  margin-bottom: 60rpx;
+  background: #fff;
+  box-shadow:2rpx 4rpx 10rpx #c2c2c2;
+
+}
+.list-item  image.cover {
+  width: 100%;
+}
+.content-title {
+  padding: 12rpx 20rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.content-title text {
+  font-size: 35rpx;
+  line-height: 30rpx;
+  font-weight: bold;
+  color: #1b1b1b;
+}
+.content-brief {
+  padding: 0rpx 0rpx 30rpx 20rpx;
+  font-size: 28rpx;
+  line-height: 40rpx;
+  font-weight: 400;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: #959595;
+}
+.content-brief text{
+  font-size: 30rpx;
+   overflow: hidden;
+}
+.topic-name {
+ float: left; 
+ width: 55%;
+}
+.topic-img {
+    float: right;
+    text-align: right;
+    width: 40%;
+    margin-right: 10rpx;
+    padding-top: 10rpx;
+}
+.img-menu {
+  width: 80rpx;
+  height: 40rpx;
+  display: inline-block;
+  text-align: center;
+   border-radius: 6rpx;
+}

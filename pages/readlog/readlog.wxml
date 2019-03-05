@@ -1,0 +1,58 @@
+<import src="../../templates/copyright.wxml"></import>
+<button open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo" style="background-color: transparent!important;">
+<view class="list-header">
+    <view bindtap="settingStatuClickEvent" class="userinfo">
+        <image backgroundSize="cover" class="userinfo-avatar" src="{{userInfo.avatarUrl}}"></image>
+        <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </view>
+</view>
+</button>
+<view class="container ijiContainer">
+    <view class="ijiFollowers">
+        <view bindtap="ijiKeep" class="ijiFollowersList {{ijiKeep?'Hover':'unHover'}}">
+            <view>
+                <text class="ijiFollowersNum">{{keepLogs.length}}</text>
+            </view>
+            <view>
+                <text class="ijiFollowersText">收藏</text>
+            </view>
+        </view>
+        <view bindtap="ijiRead" class="ijiFollowersList {{ijiRead?'Hover':'unHover'}}">
+            <view>
+                <text class="ijiFollowersNum">{{readLogs.length}}</text>
+            </view>
+            <view>
+                <text class="ijiFollowersText">历史</text>
+            </view>
+        </view>
+    </view>
+    <view style="display:{{ijiRead?'block':'none'}};">
+        <view class="log-list ijiLogList" wx:if="{{readLogs.length>0}}">
+            <view catchtap="redictDetail" class="log-items ijilogItems" id="{{item[0]}}" index="{{index}}" style="background-image: url('{{item[2]}}');" wx:for="{{readLogs}}" wx:key="id">
+                <text class="ijiLogTittle">{{item[1]}}</text>
+            </view>
+        </view>
+        <view class="noLog" wx:else>
+            <text class="log-text">您还未浏览任何文章。</text>
+        </view>
+    </view>
+    <view style="display:{{ijiKeep?'block':'none'}};">
+        <view class="ijiHasCommentLogList" wx:if="{{keepLogs.length>0}}">
+            <view class="ijiCommentLogList">
+                <view catchtap="redictDetail" class="ijiCommentLogItems" id="{{item[0]}}" index="{{index}}" wx:for="{{keepLogs}}" wx:key="id">
+                    <view class="ijiLogThumb" style="background-image: url('{{item[2]}}');"></view>
+                    <text class="ijiLogTittle">{{item[1]}}</text>
+                </view>
+            </view>
+        </view>
+        <view class="noLog" wx:else>
+            <text class="log-text">您还未收藏过任何文章。</text>
+        </view>
+    </view>
+</view>
+<view class="ijiBackgroundBlur">
+    <view class="ijiBackgroundBlurBg" style="background-image: url('{{userInfo.avatarUrl}}');"></view>
+</view>
+<view class="copyright" style="display:{{floatDisplay}}">
+    <template is="tempCopyright" data></template>
+</view>

@@ -1,0 +1,9 @@
+<template name="tempHeader">
+  <view class="header">
+    <image src="../../images/logo.png" style="height:200rpx;width:400rpx"></image>
+    <view style='margin-top:40rpx'>
+      xxxxxxxxxxxxxxxx
+    </view>
+  </view>
+</template>
+<!-- header end -->

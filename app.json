@@ -1,0 +1,59 @@
+{
+    "pages": [
+        "pages/index/index",
+        "pages/detail/detail",
+        "pages/logs/logs",
+        "pages/page/page",
+        "pages/list/list",
+        "pages/topic/topic",
+        "pages/readlog/readlog",
+        "pages/hot/hot",
+        "pages/webpage/webpage",
+        "pages/comments/comments",
+        "pages/social/social"
+    ],
+    "window": {
+      "backgroundTextStyle": "dark",
+      "navigationBarBackgroundColor": "#ffffff",
+      "navigationBarTitleText": "猫小镇 - 在路上",
+      "navigationBarTextStyle": "black"
+    },
+    "tabBar": {
+        "color": "#9BABBA",
+        "selectedColor": "#495056",
+        "borderStyle": "white",
+        "backgroundColor": "#ffffff",
+        "list": [
+            {
+                "pagePath": "pages/index/index",
+                "iconPath": "images/tar-home.png",
+                "selectedIconPath": "images/tar-home-on.png",
+                "text": "首页"
+            },
+            {
+                "pagePath": "pages/hot/hot",
+                "iconPath": "images/ranking.png",
+                "selectedIconPath": "images/ranking-on.png",
+                "text": "栏目"
+            },
+            {
+              "pagePath": "pages/topic/topic",
+              "iconPath": "images/zt.png",
+              "selectedIconPath": "images/zt-on.png",
+              "text": "专题"
+            },
+            {
+                "pagePath": "pages/readlog/readlog",
+                "iconPath": "images/tar-person.png",
+                "selectedIconPath": "images/tar-person-on.png",
+                "text": "我的"
+            }
+        ]
+    },
+    "networkTimeout": {
+        "request": 10000,
+        "connectSocket": 10000,
+        "uploadFile": 10000,
+        "downloadFile": 10000
+    }
+}

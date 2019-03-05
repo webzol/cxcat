@@ -1,0 +1,76 @@
+<import src="../../templates/loading/threepoint.wxml" />
+<import src="../../templates/copyright.wxml" />
+<import src="../../vendor/wxParse/wxParse.wxml" />
+<import src="../../templates/login-popup.wxml" />
+<scroll-view class="tab-layout" scroll-into-view="tab-{{currentColumn-2>0?currentColumn-2:0}}" scroll-x="true">
+  <view bindtap="switchColumn" class="tab-layout-item {{currentColumn==idx?'active':''}}" data-idx="{{idx}}" id="tab-{{idx}}" wx:for="{{forums}}" data-forumid="{{item.id}}" wx:for-index="idx" wx:key="{{id}}">
+    {{item.title}}
+  </view>
+</scroll-view>
+<!-- <image bindtap="openSearch"  class="tab-search-btn" src="../../images/tab-search-btn.png"></image> -->
+<view class="container">
+
+  <view>
+    <!--背景小图标-->
+    <!--  <view class="header">
+  </view> -->
+    <view class="header">
+      <view class="entry-summary">
+        <template is="wxParse" data="{{wxParseData:article.nodes}}" />
+      </view>
+    </view>
+    <!--占位行-->
+    <!-- <view class="lie"></view> -->
+    <view class="showerror" style="display:{{isError?'block':'none'}}">
+      <image src="../../images/cry80.png" style="height:100rpx;width:100rpx"></image>
+      <view class="errortext">
+        暂时无法访问网络,下拉重试...
+
+      </view>
+    </view>
+    <!-- <view style="display:{{showallDisplay}}"> -->
+    <!-- 加载图文列表 -->
+    <block wx:key="id" wx:for="{{topicsList}}">
+      <view class="content" wx:for-index="id" index="{{index}}">
+        <!--头像-->
+        <view class="head">
+          <!--如果是用微信发贴，则显示微信头像-->
+          <block wx:if="{{item.author_avatar}}">
+            <image src="{{item.author_avatar}}" class="baseimg"></image>
+          </block>
+        </view>
+        <!--昵称-->
+        <text class="wz">{{item.author_name}}</text>
+        <!--内容-->
+        <text class="desc-title" id="{{item.id}}" bindtap="TopicDetail">{{item.title}}</text>
+        <rich-text class="desc" id="{{item.id}}" nodes="{{item.excerpt}}" bindtap="TopicDetail"></rich-text>
+        <view wx:if="{{item.firstimg !=null}}">
+          <image src="{{item.firstimg}}" class="firstimg" id="{{item.id}}" bindtap="TopicDetail" mode="aspectFill"></image>
+        </view>
+        <!--显示发布时间-->
+        <view class="content-date">
+          <text >{{item.post_date}}</text>
+          <view class='content-date-comment'>
+          <image src="../../images/comments.png"></image>
+          <text class="comment-num">{{item.reply_count}}</text>
+          </view>
+        </view>
+
+      </view>
+    </block>
+    <view style='display:{{isLoading?"block":"none"}}'>
+      <template is="threepoint" />
+    </view>
+    <view class="no-more" style="display:{{isLastPage?'block':'none'}}">-小喵不在下面-</view>
+    <view class="copyright">
+      <template is="tempCopyright" data="{{copyright}}" />
+    </view>
+    <!-- </view> -->
+  </view>
+</view>
+<template is="login-popup" data="{{show:isLoginPopup,userInfo:userInfo}}"></template>
+<view style="display:{{showAddbtn?'block':'none'}}">
+  <view class="posts" bindtap="sendPost">
+    <image class="addpost" src="../../images/column-upload-pic.png"></image>
+  </view>
+</view>
