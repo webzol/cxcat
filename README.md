@@ -10,7 +10,8 @@
 > https://github.com/webzol/cxcat
 #### 码云下载地址
 > https://gitee.com/izol/cxcat
-
+###为了方便大家更好的交流 特意建立了QQ群 欢迎大家添加 代码更新版本都会在第一时间更新
+QQ群号码:4961625
 #### 小程序配套wordpress插件：
 > 本小程序完整使用需要配合原作者（imxjb）编写的wordpress插件wp-rest-api-for-app，才能完整使用，插件下载地址： https://github.com/iamxjb/rest-api-to-miniprogram
 
