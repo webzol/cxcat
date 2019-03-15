@@ -1,6 +1,7 @@
 ## 关于本小程序 :cat:
 #### 2019年3月已经更新 :star::bowtie::earth_asia:
-> 本次小程序的修改基于开源的wordpress小程序"守望轩",本着开源的精神会一直更新下去。感谢大家的支持，希望越做越好。
+> 本次小程序的修改基于开源的wordpress小程序"守望轩",本着开源的精神会一直更新下去。
+感谢大家的支持，希望越做越好。
 ![](https://cdn.cxcat.com/wp-content/uploads/2019/02/1551171354-erweima.jpg?imageView2/2/w/1024#")
  [猫小镇小程序欣赏]
  </div>
