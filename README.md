@@ -5,7 +5,7 @@
  [猫小镇小程序欣赏]
  </div>
 
-### WordPress版微信小程序 :book:猫小镇开源地址:octocat:
+### WordPress版微信小程序 :book:猫小镇开源地址:octocat: QQ群:4961625
 #### git下载地址
 > https://github.com/webzol/cxcat
 #### 码云下载地址
