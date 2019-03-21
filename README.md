@@ -36,6 +36,31 @@
 1.摘要更新了插件,使用的话必须使用我修改的插件文件，否则出现首页空白的问题
 
 2.插件地址https://github.com/webzol/cxcatapi
+## 2019年3月2次更新记录
+
+1.首页标题的显示问题，解决了多余部分隐藏，用到的属性为
+> overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+2.底部添加了小程序推荐栏目
+index.wxml代码
+> <view class="top-item">
+        <navigator target="miniProgram" open-type="navigate" app-id="需要添加小程序的Appid" path="pages/index/index" extra-data="" hover-class="none" version="release">
+          <view>
+            <image src="../../images/time.jpg"></image>
+          </view>
+          <view>
+            <vpush-view>
+              <text>小程序名称</text>
+            </vpush-view>
+          </view>
+        </navigator>
+      </view>
+需要注意点的是需要小程序跳转还需要在app.json添加如下代码
+>    "navigateToMiniProgramAppIdList": [
+      "需要添加小程序的Appid"
+    ]
+
 ## 2019年3月1次更新记录
 
 1.首页整体界面UI优化
