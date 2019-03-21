@@ -22,11 +22,19 @@
 .list-content {
     font-size: 14px;
     color: rgba(0,0,0,0.44);
-    /* padding-left: 15px;
-    padding-right: 15px; */
     text-align: justify;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    z-index: 66;
+    color: #FFF;
+    padding: 0 8rpx;
+   
+}
+.kit-title{
+  display:inline-block;
+  font-size:35rpx;
+  font-weight:600;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 .search-button icon {
   position: absolute;
@@ -348,9 +356,18 @@ swiper.index-swiper {
 }
 .lable-t{
   position:relative;
-  top:50px;
-  background:#FFF;
+  top:100rpx;
+  border: 1rpx solid #FFF;
+  /* background-color:rgba(255, 255, 255, .33); */
   z-index:10;
-  width:100rpx;
+  width:30%;
   text-align:center;
+  margin: 0 auto;
+}
+.recommend{
+  /* text-align: center; */
+  margin-top: 32px;
+    margin-bottom: 24px;
+    padding-left: 24px;
+    border-left: 4px solid #6aafe6;
 }

@@ -29,9 +29,9 @@
       </form>
   </view>
   <!-- 图标导航 -->
-            <view class="top-Nav wx:key={{ item.name }}">
-             <text>{{ item.name }}</text>
-            </view>
+  <view class="top-Nav wx:key={{ item.name }}">
+    <text>{{ item.name }}</text>
+  </view>
   <!--文章显示-->
   <view class="food-recommend">
     <view class="food-list-wrap">
@@ -48,18 +48,20 @@
         <!-- 文章内容 -->
           <view class="food-detail">
           <block wx:if="{{item.category_name !=null}}">
-                    <view> class="lable-t">{{item.category_name}}</view>
-            </block>
+             <view class="lable-t">{{item.category_name}}</view>
+           </block>
             <image class="food-icon" src="{{item.content_first_image}}" mode="aspectFill"></image>
+             <view class="list-content">
+              <view class='kit-title'>{{item.title.rendered}}</view> 
+            </view>
             <view class="food-bg"></view>
           </view>
           
         <!-- 文章摘要 -->
-         <view class="list-content">{{item.title.rendered}}</view>
+         <!-- <view class="list-content">{{item.title.rendered}}</view> -->
         <!-- 文章时间/浏览/点赞-->
           <view class="food-desc">
               <view class="entry-date">
-              
                 <image src="../../images/calendar.png" style="height:24rpx;width:24rpx;"></image>
                 <text class="entry-date-text">{{item.date}}</text>
                   <image src="../../images/comments.png" style="height:24rpx;width:24rpx;margin-left: 20rpx;"></image>
@@ -73,6 +75,24 @@
             <!--  -->
         </view>
         <view class="no-more" style="display:{{isLastPage?'block':'none'}}">- 已到了世界的尽头 -</view>
+        <view class='recommend'>优秀小程序推荐</view>
+        <!-- 推荐 -->
+<view class="top-item">
+        <navigator target="miniProgram" open-type="navigate" app-id="wx637f964549aa452a" path="pages/index/index" extra-data="" hover-class="none" version="release">
+          <view>
+            <image src="../../images/time.jpg"></image>
+          </view>
+          <view>
+            <vpush-view>
+              <text>小时光儿</text>
+            </vpush-view>
+          </view>
+        </navigator>
+      </view>
+      <!-- <button bindtap='navigateToMiniProgram'>
+          小时光儿
+      </button> -->
+      <ad unit-id="adunit-68ab0ddd49dd2d01"></ad>
       </view>
     </view>
   </view>

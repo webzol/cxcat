@@ -97,6 +97,22 @@ Page({
   onShow: function (options){
       wx.setStorageSync('openLinkCount', 0);
   },  
+  navigateToMiniProgram() {
+    wx.navigateToMiniProgram({
+      appId: 'wx637f964549aa452a',
+      path: 'pages/index/index',
+      extraData: {
+        from: 'xxxxx'
+      },
+      envVersion: 'release',
+      success(res) {
+        // 打开其他小程序成功同步触发
+        wx.showToast({
+          title: '跳转成功'
+        })
+      }
+    })
+  },
   fetchTopFivePosts: function () {
     var self = this;
     //取置顶的文章
@@ -275,15 +291,6 @@ Page({
       });
     }
   },
-  // 跳转至查看文章详情
-  // redictDetail: function (e) {
-  //   // console.log('查看文章');
-  //   var id = e.currentTarget.id,
-  //     url = '../detail/detail?id=' + id;
-  //   wx.navigateTo({
-  //     url: url
-  //   })
-  // },
   redictDetail: function (a) {
     var t = "../detail/detail?id=" + a.currentTarget.id;
     wx.navigateTo({
