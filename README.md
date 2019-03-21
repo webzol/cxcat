@@ -42,6 +42,7 @@
 > overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
+  
 2.底部添加了小程序推荐栏目
 index.wxml代码
 > <view class="top-item">
@@ -56,7 +57,7 @@ index.wxml代码
           </view>
         </navigator>
       </view>
-需要注意点的是需要小程序跳转还需要在app.json添加如下代码
+### 需要注意点的是需要小程序跳转还需要在app.json添加如下代码
 >    "navigateToMiniProgramAppIdList": [
       "需要添加小程序的Appid"
     ]
