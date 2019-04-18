@@ -1,5 +1,6 @@
 ## :cat: 通知  通知  通知 :cat:
 > 小程序已经恢复 欢迎查看 需要进微信群交流群的添加微信 hackdxd
+> 小程序网站 https://mzhuti.com
 ## 关于本小程序 :cat:
 #### 2019年3月已经更新 :star::bowtie::earth_asia:
 > 本次小程序的修改基于开源的wordpress小程序"守望轩",本着开源的精神会一直更新下去。
@@ -8,7 +9,7 @@
  [猫小镇小程序欣赏]
  </div>
 
-### WordPress版微信小程序 :book:猫小镇开源地址:octocat: QQ群:4961625
+### WordPress版微信小程序 :book:猫小镇开源地址:octocat: QQ群:782332434
 #### git下载地址
 > https://github.com/webzol/cxcat
 #### 码云下载地址
@@ -104,13 +105,6 @@ index.wxml代码
 
 5.增加了首页文章摘要
 
-#### 为了让小白新手更好的使用小程序，以下由晗绪小童学做了详细的教程 
-> https://www.kancloud.cn/hnxeguo/wpforwx
-<div align=center>
- <img width = '300' height ='300' src ="https://cxcat.com/wp-content/uploads/2018/07/un.jpg"/></div>
-<div align=center>
- [unear实验室小程序欣赏]
- </div>
 
 #### 以下是wordpress小程序开源者一些更新记录
 
