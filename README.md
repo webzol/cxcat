@@ -1,6 +1,9 @@
 ## :cat: 通知  通知  通知 :cat:
 > 小程序已经恢复 欢迎查看 需要进微信群交流群的添加微信 hackdxd
 > 小程序网站 https://mzhuti.com
+
+#### 为了方便大家更好的交流 特意建立了QQ群 欢迎大家添加 代码更新版本都会在第一时间更新
+> QQ群号码:782332434
 ## 关于本小程序 :cat:
 #### 2019年3月已经更新 :star::bowtie::earth_asia:
 > 本次小程序的修改基于开源的wordpress小程序"守望轩",本着开源的精神会一直更新下去。
@@ -15,8 +18,6 @@
 #### 码云下载地址
 > https://gitee.com/izol/cxcat
 
-#### 为了方便大家更好的交流 特意建立了QQ群 欢迎大家添加 代码更新版本都会在第一时间更新
-> QQ群号码:4961625
 
 #### 小程序配套wordpress插件：
 > 本小程序完整使用需要配合原作者（imxjb）编写的wordpress插件wp-rest-api-for-app，才能完整使用，插件下载地址： https://github.com/iamxjb/rest-api-to-miniprogram
