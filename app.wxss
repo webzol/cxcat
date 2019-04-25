@@ -80,7 +80,6 @@
 	width: 30%;
 	height: 150rpx;
 	margin-top: 20rpx;
-	border-radius: 12rpx;
 }
 
 .common-list .list-item.has-img .content-title {
