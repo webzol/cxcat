@@ -13,7 +13,7 @@
  </div>
  
 #### 小程序展示
-![EZgSN8.png](https://s2.ax1x.com/2019/04/25/EZgSN8.png)
+[![EZgSN8.png](https://s2.ax1x.com/2019/04/25/EZgSN8.png)](https://imgchr.com/i/EZgSN8)
 
 #### 个人网站
 > http://www.aihack.cn
