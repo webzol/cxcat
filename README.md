@@ -8,13 +8,13 @@
 #### 2019年3月已经更新 :star::bowtie::earth_asia:
 > 本次小程序的修改基于开源的wordpress小程序"守望轩",本着开源的精神会一直更新下去。
 感谢大家的支持，希望越做越好。
+
 ![EZcLjA.jpg](https://s2.ax1x.com/2019/04/25/EZcLjA.jpg)
  [猫小镇小程序欣赏]
  </div>
  
 #### 小程序展示
-[![EZgSN8.png](https://s2.ax1x.com/2019/04/25/EZgSN8.png)](https://imgchr.com/i/EZgSN8)
-
+[![EZgSN8.md.png](https://s2.ax1x.com/2019/04/25/EZgSN8.md.png)](https://imgchr.com/i/EZgSN8)
 #### 个人网站
 > http://www.aihack.cn
 > https://cxcat.com
