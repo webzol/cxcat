@@ -26,12 +26,23 @@
     z-index: 66;
     color: #FFF;
     padding: 0 8rpx;
+      position: absolute; /*绝对定位,文字覆盖图片上*/
+  color: white;
+  bottom: 0px; /* 位置在父级元素底部 */
+  font-size: 17px;
+  width: 98%;
+  height: 100rpx; /* 设置容器高度,显示渐变的高度 */
+  /* 背景渐变:bottom:从下到上,右0.8向0透明渐变 */
+  background: -webkit-linear-gradient(bottom,rgba(0,0,0,0.5),rgba(0,0,0,0));
+  display: flex; /* flex布局,控制容器内文字元素在底部 */
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 1% 1% 1% 1%;
    
 }
 .kit-title{
   display:inline-block;
   font-size:35rpx;
-  font-weight:600;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -59,21 +70,21 @@
   overflow: hidden;
 }
 .search-input {
-  background-color:#f1f1f1;
-  padding: 16rpx 0 16rpx 32rpx;
-  min-height: 1rem;
-  font-size: 30rpx;
-  /*  position: absolute;*/
-  border-bottom-left-radius: 20rpx;
-  border-top-left-radius: 20rpx;
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
-  border: 1px solid #f1f1f1; 
-  border-right: 0 !important;
-  height: 48rpx;
-  width: 80%;
-  text-align: left;
-  box-shadow: 1px 1px 6px #ecf0f0;
+background-color:#f1f1f1;
+padding:16rpx 0 16rpx 2rpx;
+min-height:1rem;
+font-size:27rpx;
+border-bottom-left-radius:20rpx;
+border-top-left-radius:20rpx;
+border-top-right-radius:0;
+border-bottom-right-radius:0;
+border:1px solid #f1f1f1;
+border-right:0 !important;
+height:48rpx;
+width:80%;
+text-align:left;
+box-shadow:1px 1px 6px #ecf0f0;
+
 }
 
 .share-button {
@@ -85,16 +96,13 @@
 }
 
 .search-pancel {
-  border-radius: 20rpx;
   margin-left: 2.8%;
-  /* border: 1px solid #e0e0e0; */
   display:flex;
   flex-direction:row;
   padding-left:12px;
   margin-top:20px;
   width:91%;
   background: #f1f1f1;
-  /* box-shadow:rgba(0,0,0,0.1) 0 4rpx 6rpx; */
 }
 
 .search-pancel image {
@@ -184,25 +192,17 @@ swiper {
   border-radius: 15rpx;
 }
 swiper-item{
-  border-radius: 8rpx;
   height: 320rpx;
-  /* padding: 0 6rpx; */
 }
 .index-header{
   position:relative;
   height:320rpx;
   top:48px;
-  margin-bottom:100rpx;
-}
-swiper image{
-  border-radius: 15rpx;
+  margin-bottom:120rpx;
 }
 swiper.index-swiper {
   position: relative;
   height: 320rpx;
-}
-.index-swiper image{
-  border-radius: 8rpx;
 }
 .food-list{
   padding:12rpx 12rpx 12rpx 12rpx;
@@ -214,6 +214,9 @@ swiper.index-swiper {
   padding: 22rpx 0 30rpx 0;
   justify-content:space-around;
   display:-webkit-box;
+  height: 50rpx;
+  line-height: 50rpx;
+  width: 100%;
 }
 .top-item{
   text-align: center;
@@ -241,14 +244,12 @@ swiper.index-swiper {
 }
 
 .food-list-wrap {
-  padding: 40rpx 15rpx 40rpx 15rpx;
+  padding: 10rpx 15rpx 40rpx 15rpx;
 }
 
 .food-recommend .food-list-wrap .food-list .food-item {
     flex-shrink: 0;
-    border-radius: 15rpx;
     background: #ffffff;
-    margin-bottom: 60rpx;
 		overflow: hidden;
 }
 
@@ -259,7 +260,6 @@ swiper.index-swiper {
   width: 100%;
   height: 100%;
   z-index: 1;
-  border-radius: 8rpx;
 }
 .food-recommend .food-list-wrap .food-list .food-item .food-detail {
   position: relative;
@@ -270,7 +270,7 @@ swiper.index-swiper {
   height: 320rpx;
   line-height: 1.5;
   color: white;
-  padding:40rpx 0rpx;
+  padding:20rpx 0rpx;
   overflow: hidden;
 }
 .food-recommend .food-list-wrap .food-list .food-item .food-bg {
@@ -279,9 +279,6 @@ swiper.index-swiper {
     left: 0;
     width: 100%;
     height: 100%;
-    border-bottom-right-radius: 16rpx;
-    border-bottom-left-radius: 16rpx;
-    /* background: linear-gradient(to bottom,rgba(0,0,0,0.5),rgba(0,0,0,0) 60%,rgba(0,0,0,0.5)); */
     z-index: 2;
 }
 .box-cxcat{
@@ -312,8 +309,7 @@ swiper.index-swiper {
     
 }
 .food-desc{
-  height: 80rpx;
-  border-radius: 15rpx;
+  height: 20rpx;
 }
 .food-recommend .food-list-wrap .food-list .food-item .food-desc .item-text {
     font-size: 24rpx;
@@ -328,8 +324,11 @@ swiper.index-swiper {
   line-height: 4;
   font-weight: normal;
   outline: none;
-  margin-bottom: 30rpx;
-  background-color: fff;
+  float:left;
+  position:relative;
+  top:-46px;
+  left:-12px;
+  color:#FFF;
 }
 .entry-date img{
   background: fff;
@@ -357,12 +356,15 @@ swiper.index-swiper {
 .lable-t{
   position:relative;
   top:100rpx;
-  border: 1rpx solid #FFF;
-  /* background-color:rgba(255, 255, 255, .33); */
   z-index:10;
-  width:30%;
+  width:20%;
   text-align:center;
   margin: 0 auto;
+  background:rgba(39, 49, 73, .6);
+  font-size:30rpx;
+  top: -3rpx;
+  left: -260rpx;
+
 }
 .recommend{
   /* text-align: center; */
@@ -370,4 +372,64 @@ swiper.index-swiper {
     margin-bottom: 24px;
     padding-left: 24px;
     border-left: 4px solid #6aafe6;
+}
+.lf-line {
+  width:11rpx;
+  height:55rpx;
+  border-radius:5rpx;
+  background-color:#5899e9;
+  margin-right:35rpx;
+  position: relative;
+  left: 20rpx;
+}
+.lf-t{
+  color: #d5d5d5;
+  font-size: 30rpx;
+  position: relative;
+  left: 422rpx;
+  display: none;
+}
+.lf-z{
+  font-size: 32rpx;
+}
+.placement-box{
+   display: flex;
+   height: 100rpx;
+   flex-direction: row;
+}
+.placement-content{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  padding: 0 12rpx;
+}
+.placement-content-item{
+  width: 47%;
+  height: 280rpx;
+  margin: 5px;
+  /* 绝对定位的父级必须要定位 */
+  position: relative;
+}
+.placement-content-item-title text{
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.placement-content-item-title{
+  position: absolute; /*绝对定位,文字覆盖图片上*/
+  color: white;
+  bottom: 0px; /* 位置在父级元素底部 */
+  font-size: 17px;
+  width: 98%;
+  height: 100rpx; /* 设置容器高度,显示渐变的高度 */
+  /* 背景渐变:bottom:从下到上,右0.8向0透明渐变 */
+  background: -webkit-linear-gradient(bottom,rgba(0,0,0,0.5),rgba(0,0,0,0));
+  display: flex; /* flex布局,控制容器内文字元素在底部 */
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 1% 1% 1% 1%;
+}
+.slide-image{
+  width: 100%;
+  height: 100%;
 }

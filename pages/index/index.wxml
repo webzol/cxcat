@@ -28,15 +28,38 @@
           </view>
       </form>
   </view>
-  <!-- 图标导航 -->
-  <view class="top-Nav wx:key={{ item.name }}">
-    <text>{{ item.name }}</text>
+  <!-- 置顶文章 -->
+  <view class="top-Nav box-line">
+   <view class="lf-line"></view>
+    <view class='lf-z'>今日推荐</view>
+    <view class='lf-t'>查看更多》</view>
   </view>
+
+<!-- 置顶文章显示区 -->
+<!-- 内容 -->
+    <view class='placement-content'>
+     <view bindtap="redictDetail" class='placement-content-item' wx:for="{{postsShowSwiperList}}" wx:for-index="i" wx:key="i" id="{{item.id}}">
+ <!-- 图片 -->
+    <block wx:if="{{item.category_name !=null}}">
+        <view class="">{{item.post_title}}</view>
+      </block>
+      <image src="{{item.content_first_image}}" class="slide-image" mode='scaleToFill'/>
+      <view class='placement-content-item-title'>
+        <text>{{item.post_title}}</text>
+      </view>
+        
+      </view>
+    </view>
+<!-- 置顶文章显示区结束 -->
   <!--文章显示-->
+   <view class="top-Nav box-line">
+   <view class="lf-line"></view>
+    <view class='lf-z'>好文阅读</view>
+  </view>
   <view class="food-recommend">
     <view class="food-list-wrap">
       <view class="food-list">
-        <view bindtap="redictDetail" class="food-item" data-wepy-params-a="{{item.food}}" wx:for="{{postsList}}" id="{{item.id}}" wx:for-index="i" wx:key="i">
+        <view bindtap="redictDetail" class="food-item"  wx:for="{{postsList}}" id="{{item.id}}" wx:for-index="i" wx:key="i">
         <!-- 文章标题 -->
         <view class='box-cxcat'>
         <!-- <view class="food-title">{{item.title.rendered}}</view> -->
@@ -54,16 +77,8 @@
              <view class="list-content">
               <view class='kit-title'>{{item.title.rendered}}</view> 
             </view>
-            <view class="food-bg"></view>
-          </view>
-          
-        <!-- 文章摘要 -->
-         <!-- <view class="list-content">{{item.title.rendered}}</view> -->
-        <!-- 文章时间/浏览/点赞-->
-          <view class="food-desc">
-              <view class="entry-date">
-                <image src="../../images/calendar.png" style="height:24rpx;width:24rpx;"></image>
-                <text class="entry-date-text">{{item.date}}</text>
+            
+<view class="entry-date">
                   <image src="../../images/comments.png" style="height:24rpx;width:24rpx;margin-left: 20rpx;"></image>
                   <text class="entry-icon-text">{{item.total_comments}}</text>
                   <image src="../../images/pageviews.png" style="height:24rpx;width:24rpx;margin-left: 20rpx;"></image>
@@ -71,28 +86,21 @@
                   <image src="../../images/home-like.png" style="height:24rpx;width:24rpx;margin-left: 20rpx;"></image>
                   <text class="entry-icon-text">{{item.like_count}}</text>
             </view>
+
+
+
+
+          </view>
+                    
+        <!-- 文章时间/浏览/点赞-->
+          <view class="food-desc">
+              
             </view>
             <!--  -->
         </view>
         <view class="no-more" style="display:{{isLastPage?'block':'none'}}">- 已到了世界的尽头 -</view>
-        <view class='recommend'>优秀小程序推荐</view>
+        <!-- <view class='recommend'>优秀小程序推荐</view>
         <!-- 推荐 -->
-<view class="top-item">
-        <navigator target="miniProgram" open-type="navigate" app-id="wx637f964549aa452a" path="pages/index/index" extra-data="" hover-class="none" version="release">
-          <view>
-            <image src="../../images/time.jpg"></image>
-          </view>
-          <view>
-            <vpush-view>
-              <text>小时光儿</text>
-            </vpush-view>
-          </view>
-        </navigator>
-      </view>
-      <!-- <button bindtap='navigateToMiniProgram'>
-          小时光儿
-      </button> -->
-      <ad unit-id="adunit-68ab0ddd49dd2d01"></ad>
       </view>
     </view>
   </view>
