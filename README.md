@@ -8,9 +8,23 @@
 #### 2019年3月已经更新 :star::bowtie::earth_asia:
 > 本次小程序的修改基于开源的wordpress小程序"守望轩",本着开源的精神会一直更新下去。
 感谢大家的支持，希望越做越好。
-![](https://cdn.cxcat.com/wp-content/uploads/2019/02/1551171354-erweima.jpg?imageView2/2/w/1024#")
+![EZcLjA.jpg](https://s2.ax1x.com/2019/04/25/EZcLjA.jpg)
  [猫小镇小程序欣赏]
  </div>
+ 
+#### 小程序展示
+![EZgSN8.png](https://s2.ax1x.com/2019/04/25/EZgSN8.png)
+
+#### 个人网站
+> http://www.aihack.cn
+> https://cxcat.com
+
+#### 欢迎添加更好的体验
+
+> 小程序ID：wxe61b785946958cc7
+
+#### 微信群已满
+> (添加微信 hackdxd )拉你进群
 
 ### WordPress版微信小程序 :book:猫小镇开源地址:octocat: QQ群:782332434
 #### git下载地址
@@ -21,20 +35,6 @@
 
 #### 小程序配套wordpress插件：
 > 本小程序完整使用需要配合原作者（imxjb）编写的wordpress插件wp-rest-api-for-app，才能完整使用，插件下载地址： https://github.com/iamxjb/rest-api-to-miniprogram
-
-#### 个人网站
-> http://www.aihack.cn
-> https://cxcat.com
-
-#### 欢迎添加更好的体验
-
-> 小程序ID：wxe61b785946958cc7
-
-#### 小程序展示
-![](http://mzhuti.com/wp-content/uploads/2019/04/4a8a08f09d37b73-1024x377.png)
-
-#### 微信群已满
-> (添加微信 hackdxd )拉你进群
 
 #  注意问题
 ## 2019年4月第1次更新记录
