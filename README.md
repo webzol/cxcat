@@ -31,7 +31,7 @@
 > 小程序ID：wxe61b785946958cc7
 
 #### 小程序展示
-![](https://cdn.cxcat.com/wp-content/uploads/2019/02/1551171102-xc.jpg?imageView2/2/w/1024#)
+![](http://mzhuti.com/wp-content/uploads/2019/04/4a8a08f09d37b73-1024x377.png)
 
 #### 微信群已满
 > (添加微信 hackdxd )拉你进群
