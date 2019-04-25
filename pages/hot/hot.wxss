@@ -94,11 +94,7 @@
 }
 
 .top-bar-item-Selected {
-  border-bottom: 1px solid #495056;
-  border:1px solid #6aafe6;
-  border-radius:27rpx;
-  background:#6aafe6;
-  color:#ffffff;
+  text-line-through-color:2px #6aafe6;
+  text-decoration:line-through;
   margin-left:25rpx;
-  box-shadow:0px 5px 10px #6aafe6;
 }
