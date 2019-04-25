@@ -22,9 +22,8 @@
   top: 20%;
   left: 0;
   z-index: 9999;
-  background: #f9f9f9;
+  background: #FFFFFF;
   margin: -180rpx 65rpx;
-  border-radius: 20rpx;
 }
 .modal-title {
   padding-top: 50rpx;
@@ -43,9 +42,7 @@
 }
 .modal-input_solo {
   margin: 0 auto; 
-  border: 2rpx solid #ddd;
   width: 80%;
-  border-radius: 20rpx;
 }
 .modal-input_hd{
   border-top: 2rpx solid #ddd;
@@ -108,6 +105,6 @@
 }
 .btn-confirm {
   width: 50%;
-  color: #3cc51f;
+  color: #5899e9;
   text-align: center;
 }
