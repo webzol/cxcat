@@ -11,7 +11,7 @@
 > 本次小程序的修改基于开源的wordpress小程序"守望轩",本着开源的精神会一直更新下去。
 感谢大家的支持，希望越做越好。
 
-![EZcLjA.jpg](https://s2.ax1x.com/2019/04/25/EZcLjA.jpg)
+![EZcLjA.jpg](http://mzhuti.com/wp-content/uploads/2019/05/43360d41faff871.jpg)
  [猫小镇小程序欣赏]
  </div>
  
