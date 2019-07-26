@@ -2,6 +2,16 @@
 > 小程序已经恢复 欢迎查看 需要进微信群交流群的添加微信 hackdxd
 > 小程序网站 http://mzhuti.com
 
+
+# 7月中旬丸子团队做了微信跟QQ两个开源版本
+
+> 标签：旅游、笔记、博客
+
+## 直达地址
+
+1. 点击(https://github.com/webzol/Travel-Mini-Program)前端代码
+2. 点击(https://github.com/dchijack/wp-mini-program)插件地址
+
 ## 感觉不错 记得来个star:cat:
 
 #### 为了方便大家更好的交流 特意建立了QQ群 QQ群号码:782332434 欢迎大家添加 代码更新版本都会在第一时间更新
