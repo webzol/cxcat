@@ -3,13 +3,18 @@
 > 小程序网站 http://mzhuti.com
 
 
-# 7月中旬丸子团队做了微信跟QQ两个开源版本
+# 7月中旬丸子团队做了微信跟QQ两个开源版本(WordPress小程序)
 
 > 标签：旅游、笔记、博客
+
+百度、今日头条等多端小程序还在测试中，后期陆续上线,开源小程序微信交流群以及QQ交流群添加微信 hackdxd 备注(开源)进群交流。
+
+
 
 ## 直达地址
 
 1.[前端代码点击这里访问](https://github.com/webzol/Travel-Mini-Program)
+
 2.[插件地址点击这里访问](https://github.com/dchijack/wp-mini-program)
 
 ## 感觉不错 记得来个star:cat:
