@@ -9,8 +9,8 @@
 
 ## 直达地址
 
-1. 点击(https://github.com/webzol/Travel-Mini-Program)前端代码
-2. 点击(https://github.com/dchijack/wp-mini-program)插件地址
+1.[前端代码点击这里访问](https://github.com/webzol/Travel-Mini-Program)
+2.[插件地址点击这里访问](https://github.com/dchijack/wp-mini-program)
 
 ## 感觉不错 记得来个star:cat:
 
